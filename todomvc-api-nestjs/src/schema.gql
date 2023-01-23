@@ -1,0 +1,41 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input CreateTodoInput {
+  """User-facing label for the Todo item"""
+  title: String!
+}
+
+type Mutation {
+  createTodo(createTodoInput: CreateTodoInput!): Todo!
+  removeTodo(id: Int!): Todo!
+  updateTodo(updateTodoInput: UpdateTodoInput!): Todo!
+}
+
+type Query {
+  todo(id: Int!): Todo!
+  todos: [Todo!]!
+}
+
+type Todo {
+  """Flag that can be toggled to mark item as completed"""
+  completed: Boolean!
+
+  """Unique identifier"""
+  id: Int!
+
+  """User-facing label for the Todo item"""
+  title: String!
+}
+
+input UpdateTodoInput {
+  """Flag that can be toggled to mark item as completed"""
+  completed: Boolean
+
+  """Unique identifier"""
+  id: Int!
+
+  """User-facing label for the Todo item"""
+  title: String
+}
