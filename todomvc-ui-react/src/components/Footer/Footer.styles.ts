@@ -1,3 +1,3 @@
 export const FooterWrapper = {
-  padding: "20px",
+  // padding: 20,
 };

@@ -78,7 +78,7 @@ function TodoList() {
       {(!todos || todos.length === 0) && <p>No tasks</p>}
 
       {todos && todos.length > 0 && (
-        <ul>
+        <ul className="unstyled">
           {todos.map((item) => (
             <article key={item.id}>
               <h3>{item.title}</h3>

@@ -7,9 +7,7 @@ function Footer() {
 
   return (
     <footer className={css(FooterWrapper)}>
-      <p>
-        <small>Built in React with a NestJS + SQLite back-end</small>
-      </p>
+      <p className="small">Built in React with a NestJS + SQLite back-end</p>
     </footer>
   );
 }
